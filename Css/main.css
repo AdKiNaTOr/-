@@ -10,6 +10,8 @@ body {
 }
 
 header {
+     overflow-x: auto;
+    white-space: nowrap;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,7 +35,7 @@ header {
 }
 
 header span:not(:last-child) {
-    margin-right: 500px;
+    margin-right: 10vh;
     
 
 }
@@ -60,16 +62,15 @@ header span a {
 }
 
 #Text {
-    position: absolute;
-    font-size: 30px;
+   position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) translate(70px ,-200px);
+    transform: translate(-50%, -50%);
+    font-size: 30px;
     color: rgb(255, 0, 0);
     text-shadow: 
     0 0 5px;
     
-
 
 }
 
@@ -81,7 +82,7 @@ header span a {
     height: 100px;
     border-radius: 10px;
     margin: 100px;
-    
+    overflow-y: auto;
     filter: drop-shadow(
         0 0 5px rgb(111,0,255)
     
@@ -91,24 +92,26 @@ header span a {
 
 #meme1 {
     position: absolute;
-    transform: rotate(45deg) scale(2) translate(100px , -100px);
+    transform: rotate(45deg) scale(2) translate(20vw, -20vh);
     animation: meme1 1s infinite alternate;
 }
+
 #meme2 {
     position: absolute;
-    transform: rotate(-45deg) scale(2) translate(-200px , -100px);
+    transform: rotate(-45deg) scale(2) translate(-15vw, -10vh);
     animation: meme2 1s infinite alternate;
 }
+
 #meme3 {
     position: absolute;
-    transform: rotate(70deg) scale(2) translate(-100px , -200px); 
+    transform: rotate(70deg) scale(2) translate(-10vw, -20vh);
     animation: meme3 1s infinite alternate;
 }
 
 #meme4 {
-     position: absolute;
-     transform: rotate(25deg) scale(2) translate(-300px , -50px);
-     animation: meme4 1s infinite alternate;
+    position: absolute;
+    transform: rotate(25deg) scale(2) translate(-25vw, -5vh);
+    animation: meme4 1s infinite alternate;
 }
 
 @keyframes meme1 {

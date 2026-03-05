@@ -10,6 +10,8 @@ body {
 }
 
 header {
+     overflow-x: auto;
+    white-space: nowrap;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,11 +35,12 @@ header {
 }
 
 header span:not(:last-child) {
-    margin-right: 500px;
+    margin-right: 10vh;
     
 
 }
 header span {
+    overflow-x: auto;
     color: rgb(255, 255, 255);
     font-size: 30px;
     border-radius: 10px;

@@ -13,6 +13,8 @@ body {
 }
 
 header {
+     overflow-x: auto;
+    white-space: nowrap;
     position: fixed;
     top: 0;
     left: 0;
@@ -30,17 +32,18 @@ header {
     0 10px 15px #482d7c,
     0 10px 30px #1d0f38;
     
-    z-index: 100;
+    
 
 
 }
 
 header span:not(:last-child) {
-    margin-right: 500px;
+    margin-right: 10vh;
     
 
 }
 header span {
+    overflow-x: auto;
     color: rgb(255, 255, 255);
     font-size: 30px;
     border-radius: 10px;
@@ -98,8 +101,10 @@ header span a {
 }
 
 #AntonChigur {
-    transform: scale(0.5) translateY(-800px);
+    position: relative;
+    transform: scale(0.5) translate(30vh, -30vw);
     opacity: 0;
+    z-index: -10;
 }
 
 
