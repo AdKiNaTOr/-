@@ -102,7 +102,9 @@ header span a {
 
 #AntonChigur {
     position: relative;
-    transform: scale(0.5) translate(30vh, -30vw);
+    top: 50%;
+    left: 50%;
+    transform: scale(0.5) translate(-50%,-50%);
     opacity: 0;
     z-index: -10;
 }
